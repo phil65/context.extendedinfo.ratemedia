@@ -1,2 +1,2 @@
 # context.extendedinfo.ratemedia
-Rate medie on TMDB from context menu
+Rate media on TMDB from context menu
