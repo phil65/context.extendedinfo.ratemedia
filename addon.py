@@ -30,7 +30,7 @@ def main():
     elif db_type == "tvshow":
         xbmc.executebuiltin("RunScript(script.extendedinfo,info=ratemedia,type=tv,dbid=%s,id=%s)" % (dbid, sys.listitem.getProperty("id")))
     elif db_type == "episode":
-        xbmc.executebuiltin("RunScript(script.extendedinfo,info=ratemedia,type=episode,tvshow=%s,season=%s)" % (info.getTVShowTitle(), info.getSeason()))
+        xbmc.executebuiltin("RunScript(script.extendedinfo,info=ratemedia,type=episode,tvshow=%s,season=%s,episode=%s)" % (info.getTVShowTitle(), info.getSeason(), info.getEpisode()))
 
 if __name__ == '__main__':
     main()
